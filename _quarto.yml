@@ -22,8 +22,11 @@ website:
         href: https://www.linkedin.com/in/olivernagy1/
   
   page-footer:
-    center: |
-       **Disclaimer:** The views expressed here are my own and do not necessarily reflect those of my current or past employers or of any institution I am affiliated with. Content is for informational and educational purposes only and is not investment, financial, legal, or other professional advice.
+    left: |
+      @ <span id="copyright-year"></span>  Olivér Nagy
+    right:
+      - text: Disclaimer
+        href: disclaimer.qmd
 
 bibliography: bibliography/publications.bib
 
@@ -33,5 +36,11 @@ format:
       - cosmo
       - styles.scss
 
+    include-after-body:
+      text: |
+        <script>
+          document.getElementById("copyright-year").textContent =
+            new Date().getFullYear();
+        </script>
 
   
