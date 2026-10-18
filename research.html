@@ -598,16 +598,26 @@ Nagy, Olivér, and Gábor Neszveda. 2025. <span>“Assessing Geopolitical Risk: 
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      &nbsp;
-    </div>   
+<p>@ <span id="copyright-year"></span> Olivér Nagy</p>
+</div>   
     <div class="nav-footer-center">
-<p><strong>Disclaimer:</strong> The views expressed here are my own and do not necessarily reflect those of my current or past employers or of any institution I am affiliated with. Content is for informational and educational purposes only and is not investment, financial, legal, or other professional advice.</p>
-</div>
-    <div class="nav-footer-right">
       &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./disclaimer.html">
+<p>Disclaimer</p>
+</a>
+  </li>  
+</ul>
     </div>
   </div>
 </footer>
+<script>
+  document.getElementById("copyright-year").textContent =
+    new Date().getFullYear();
+</script>
 
 
 
