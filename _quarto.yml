@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website: 
+  title: 'Olivér Nagy'
+  site-url: 'https://naolipth.github.io'
+  
+  navbar: 
+    left: 
+      - href: index.qmd
+        text: Home
+
+      - href: research.qmd
+        text: Research
+
+      
+    right:
+      - icon: github
+        href: https://github.com/naolipth
+
+      - icon: linkedin
+        href: https://www.linkedin.com/in/olivernagy1/
+
+
+bibliography: bibliography/publications.bib
+
+format:
+  html:
+    theme: 
+      - cosmo
+      - styles.css
