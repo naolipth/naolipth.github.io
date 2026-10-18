@@ -1,4 +1,6 @@
-### Quantitative Developer · Economist · Researcher
+# Olivér Nagy
+
+## Quantitative Developer · Economist · Researcher
 
 I am an **economist** turned **quantitative developer**. My experience spans from monetary policy analysis, through policy evaluation and forecasting, to curve-fitting engine development. Nowadays, I mainly write code in **Python** and C++, but I professionally worked with R, SQL, MATLAB and Stata as well.
 

@@ -13,6 +13,9 @@ website:
       - href: research.qmd
         text: Research
 
+      - href: files/oliver_nagy_cv.pdf
+        text: CV
+
       
     right:
       - icon: github
