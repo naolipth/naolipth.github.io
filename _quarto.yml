@@ -20,7 +20,10 @@ website:
 
       - icon: linkedin
         href: https://www.linkedin.com/in/olivernagy1/
-
+  
+  page-footer:
+    center: |
+       **Disclaimer:** The views expressed here are my own and do not necessarily reflect those of my current or past employers or of any institution I am affiliated with. Content is for informational and educational purposes only and is not investment, financial, legal, or other professional advice.
 
 bibliography: bibliography/publications.bib
 
@@ -29,3 +32,6 @@ format:
     theme: 
       - cosmo
       - styles.scss
+
+
+  
