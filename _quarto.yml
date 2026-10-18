@@ -4,7 +4,7 @@ project:
 website: 
   title: 'Olivér Nagy'
   site-url: 'https://naolipth.github.io'
-  
+
   navbar: 
     left: 
       - href: index.qmd
@@ -28,4 +28,4 @@ format:
   html:
     theme: 
       - cosmo
-      - styles.css
+      - styles.scss
