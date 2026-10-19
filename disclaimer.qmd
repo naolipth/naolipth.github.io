@@ -2,14 +2,8 @@
 title: "Disclaimer"
 ---
 
-The views and opinions expressed on this website are my own and do not
-necessarily reflect the views or positions of my current or past employers  or any other organization or institution with which I am affiliated.
+The views and opinions expressed on this website are my own and do not necessarily reflect the views or positions of my current or past employers  or any other organization or institution with which I am affiliated.
 
-The material published on this website is provided for informational,
-educational, and research purposes only. Nothing on this website constitutes,
-or should be construed as, investment, financial, legal, tax, or other
-professional advice.
+The material published on this website is provided for informational, educational, and research purposes only. Nothing on this website constitutes, or should be construed as, investment, financial, legal, tax, or other professional advice.
 
-Any models, code, analyses, examples, or data presented on this website are
-provided without warranty and should not be relied upon for investment or
-other financial decisions.
+Any models, code, analyses, examples, or data presented on this website are provided without warranty and should not be relied upon for investment or other financial decisions.
