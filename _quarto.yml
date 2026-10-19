@@ -26,7 +26,7 @@ website:
   
   page-footer:
     left: |
-      © <span id="copyright-year"></span> Olivér Nagy
+      © <span id="copyright-year"></span> Olivér Nagy, All rights reserved.
     right:
       - text: Disclaimer
         href: disclaimer.qmd
