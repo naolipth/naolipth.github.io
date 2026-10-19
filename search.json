@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "disclaimer.html",
+    "href": "disclaimer.html",
+    "title": "Disclaimer",
+    "section": "",
+    "text": "The views and opinions expressed on this website are my own and do not necessarily reflect the views or positions of my current or past employers or any other organization or institution with which I am affiliated.\nThe material published on this website is provided for informational, educational, and research purposes only. Nothing on this website constitutes, or should be construed as, investment, financial, legal, tax, or other professional advice.\nAny models, code, analyses, examples, or data presented on this website are provided without warranty and should not be relied upon for investment or other financial decisions."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Olivér Nagy",
@@ -12,12 +19,5 @@
     "title": "Olivér Nagy",
     "section": "",
     "text": "I am an economist turned quantitative developer. My experience spans from monetary policy analysis, through policy evaluation and forecasting, to curve-fitting engine development. Nowadays, I mainly write code in Python and C++, but I professionally worked with R, SQL, MATLAB and Stata as well.\nI work at the intersection of quantitative finance, econometrics, and scientific computing. My current research focuses on volatility modelling, asset pricing, and financial-market responses to events. More broadly, I am interested in solving modelling problems with computational methods."
-  },
-  {
-    "objectID": "disclaimer.html",
-    "href": "disclaimer.html",
-    "title": "Disclaimer",
-    "section": "",
-    "text": "The views and opinions expressed on this website are my own and do not necessarily reflect the views or positions of my current or past employers or any other organization or institution with which I am affiliated.\nThe material published on this website is provided for informational, educational, and research purposes only. Nothing on this website constitutes, or should be construed as, investment, financial, legal, tax, or other professional advice.\nAny models, code, analyses, examples, or data presented on this website are provided without warranty and should not be relied upon for investment or other financial decisions."
   }
 ]
