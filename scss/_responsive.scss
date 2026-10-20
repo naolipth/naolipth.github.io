@@ -1,0 +1,10 @@
+@media (max-width: 849.98px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+  }
+
+  .home-hero__portrait {
+    display: none;
+  }
+}

@@ -1,7 +1,36 @@
+::: {.home-hero}
+
+<!-- Portrait comes first in the source: Quarto lifts an H1 that opens a
+     block into its own title header, which would pull the name out of the
+     hero. The CSS places the portrait in the right column. -->
+
+::: {.home-hero__portrait}
+![](images/picture_1.jpg){fig-alt="Portrait of Olivér Nagy"}
+:::
+
+::: {.home-hero__content}
+
 # Olivér Nagy
 
-## Quantitative Developer · Economist · Researcher
+<div class="home-hero__role">
+Quantitative Developer · Economist · Researcher
+</div>
+
 
 I am an **economist** turned **quantitative developer**. My experience spans from monetary policy analysis, through policy evaluation and forecasting, to curve-fitting engine development. Nowadays, I mainly write code in **Python** and C++, but I professionally worked with R, SQL, MATLAB and Stata as well.
 
 I work at the intersection of quantitative finance, econometrics, and scientific computing. My current research focuses on volatility modelling, asset pricing, and financial-market responses to events. More broadly, I am interested in solving modelling problems with computational methods.
+
+<div class="home-hero__links">
+
+[Research](research.qmd)
+[CV](files/oliver_nagy_cv.pdf)
+[GitHub](https://github.com/naolipth)
+
+</div>
+
+
+:::
+
+
+:::
