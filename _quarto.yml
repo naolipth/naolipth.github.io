@@ -2,10 +2,13 @@ project:
   type: website
 
 website: 
-  title: 'Olivér Nagy'
+  title: "Olivér Nagy's Personal Website"
   site-url: 'https://naolipth.github.io'
 
-  navbar: 
+  search: false
+
+  navbar:
+    title: false 
     left: 
       - href: index.qmd
         text: Home
