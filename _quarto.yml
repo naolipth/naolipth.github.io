@@ -27,7 +27,11 @@ website:
 
       - icon: linkedin
         href: https://www.linkedin.com/in/olivernagy1/
-  
+
+      - icon: mortarboard-fill
+        href: https://scholar.google.com/citations?user=aCQ6wv0AAAAJ
+        
+
   page-footer:
     left: |
       © <span id="copyright-year"></span> Olivér Nagy, All rights reserved.
