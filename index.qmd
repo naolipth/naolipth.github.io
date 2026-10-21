@@ -1,3 +1,7 @@
+---
+page-layout: custom
+---
+
 ::: {.home-hero}
 
 <!-- Portrait comes first in the source: Quarto lifts an H1 that opens a
@@ -15,7 +19,9 @@
 <div class="home-hero__role">
 Quantitative Developer · Economist · Researcher
 </div>
-
+ 
+  
+  
 
 I am an **economist** turned **quantitative developer**. My experience spans from monetary policy analysis, through policy evaluation and forecasting, to curve-fitting engine development. Nowadays, I mainly write code in **Python** and C++, but I professionally worked with R, SQL, MATLAB and Stata as well.
 

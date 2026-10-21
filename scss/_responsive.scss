@@ -1,15 +1,16 @@
 @media (max-width: 1064.98px) {
   .home-hero {
-    grid-template-columns: min(508px, 100%);
-    padding-block: $space-12;
+    grid-template-columns: min(550px, 100%);
+    padding-block: $space-8;
   }
 
   .home-hero__portrait {
     display: none;
   }
+
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 549.9px) {
 
   .nav-footer {
     padding-block: $space-6;

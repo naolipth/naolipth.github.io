@@ -9,6 +9,7 @@ website:
 
   navbar:
     title: false 
+    collapse-below: sm
     left: 
       - href: index.qmd
         text: Home

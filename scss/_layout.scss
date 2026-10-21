@@ -1,9 +1,13 @@
 .home-hero {
   display: grid;
-  grid-template-columns: 508px 300px;
+  grid-template-columns: 550px 300px;
   gap: 3rem;
   align-items: center;
-  padding: 4.5rem 0 4rem;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  max-width: $site-width;
+  margin: 0 auto 0;
+  padding: 3rem 3rem;
 }
 
 .home-hero__portrait {
@@ -19,4 +23,8 @@
   object-fit: cover;
   object-position: center;
   border-radius: 0.4rem;
+}
+
+#quarto-content > .home-hero {
+  padding-top: 3rem;
 }
