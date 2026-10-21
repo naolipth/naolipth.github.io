@@ -26,3 +26,11 @@
 #quarto-content > .home-hero {
   padding-top: 3rem;
 }
+
+.page-disclaimer main.content {
+  max-width: $prose-width;
+  margin-inline: auto;
+  text-align: justify;
+  hyphens: auto;
+  padding: 3rem 0;
+}

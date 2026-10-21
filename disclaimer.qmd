@@ -1,5 +1,6 @@
 ---
 title: "Disclaimer"
+body-classes: page-disclaimer
 ---
 
 The views and opinions expressed on this website are my own and do not necessarily reflect the views or positions of my current or past employers  or any other organization or institution with which I am affiliated.
