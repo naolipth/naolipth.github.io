@@ -8,7 +8,7 @@ website:
   search: false
 
   navbar:
-    title: false 
+    title: false
     collapse-below: sm
     left: 
       - href: index.qmd

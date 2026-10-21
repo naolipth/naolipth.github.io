@@ -13,10 +13,6 @@ svg {
   color: $body-color;
 }
 
-:focus-visible {
-  outline: 3px solid $primary;
-  outline-offset: 4px;
-}
 
 @media (prefers-reduced-motion: reduce) {
   *,
