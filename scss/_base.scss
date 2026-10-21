@@ -1,0 +1,29 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+::selection {
+  background: #dbeafe;
+  color: $body-color;
+}
+
+:focus-visible {
+  outline: 3px solid $primary;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
