@@ -10,9 +10,30 @@
 
 }
 
-@media (max-width: 549.9px) {
+@media (max-width: 767.98px) {
+  .home-hero {
+    padding-inline: 0;
+  }
 
   .nav-footer {
     padding-block: $space-6;
   }
+
+  .home-hero__now {
+    border-radius: $border-radius;
+  }
+
+  .home-hero__focus dl {
+    grid-template-columns: 1fr;
+  }
+
+  .home-hero__focus dt {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .home-hero__focus dd {
+    padding-top: 0.15rem;
+  }
+
 }

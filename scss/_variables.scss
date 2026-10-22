@@ -1,7 +1,14 @@
-$body-bg: #ffffff;
-$body-color: #17263c;
-$primary: #0a2146;
-$link-hover-color: #1148a6;
+$deep_blue: #0a2146;
+$link_color: #1148a6;
+$bright-white: #ffffff;
+$white: #F7F9FC;
+$dirt-white: #dce3ec;
+$light-gray: #526176;
+
+$body-bg: $bright-white;
+$body-color: $deep_blue;
+$primary: $deep_blue;
+$link-hover-color: $link_color;
 
 $font-family-sans-serif:
   system-ui, -apple-system, BlinkMacSystemFont,
@@ -21,9 +28,10 @@ $border-radius: 0.375rem;
 $site-width: 1120px;
 $prose-width: 68ch;
 
-$color-navbar-text: #F7F9FC;
-$color-muted: #526176;
-$color-border: #dce3ec;
+$color-navbar-text: $white;
+$color-muted: $light-gray;
+$color-border: $dirt-white;
+$color-surface: $bright-white;
 
 
 $space-3: 0.75rem;

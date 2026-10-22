@@ -11,21 +11,34 @@ page-layout: custom
 <div class="home-hero__role">
 Quantitative Developer · Economist · Researcher
 </div>
- 
   
 
+  
+I am an **economist** turned **quantitative developer** working at the intersection of quantitative finance, econometrics, and software engineering. My professional work focuses on financial modelling in **Python** and **C++**, while my research covers volatility forecasting, asset pricing and financial-market responses to events. More broadly, I am interested in solving modelling problems with computational methods.
 
-I am an **economist** turned **quantitative developer**. My experience spans from monetary policy analysis, through policy evaluation and forecasting, to curve-fitting engine development. Nowadays, I mainly write code in **Python** and C++, but I professionally worked with R, SQL, MATLAB and Stata as well.
 
-I work at the intersection of quantitative finance, econometrics, and scientific computing. My current research focuses on volatility modelling, asset pricing, and financial-market responses to events. More broadly, I am interested in solving modelling problems with computational methods.
+::: {.home-hero__focus}
+Quantitative development
+: Numerical methods, model implementation, financial modelling
 
-<div class="home-hero__links">
+Economics
+: Monetary policy, forecasting, policy evaluation
+
+Research
+: Volatility forecasting, asset pricing, event studies
+
+
+:::
+
+:::{.home-hero__links}
 
 [Research](research.qmd)
-[CV](files/oliver_nagy_cv.pdf)
+
+[CV (PDF)](files/oliver_nagy_cv.pdf)
+
 [GitHub](https://github.com/naolipth)
 
-</div>
+:::
 
  
 :::

@@ -2,7 +2,7 @@ project:
   type: website
 
 website: 
-  title: "Olivér Nagy's Personal Website"
+  title: "Olivér Nagy | Quantitative Developer & Economist"
   site-url: 'https://naolipth.github.io'
 
   search: false
@@ -24,12 +24,15 @@ website:
     right:
       - icon: github
         href: https://github.com/naolipth
+        aria-label: GitHub
 
       - icon: linkedin
         href: https://www.linkedin.com/in/olivernagy1/
+        aria-label: LinkedIn
 
       - icon: mortarboard-fill
         href: https://scholar.google.com/citations?user=aCQ6wv0AAAAJ
+        aria-label: Google Scholar
         
 
   page-footer:

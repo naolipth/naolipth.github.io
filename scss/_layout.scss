@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 550px 300px;
   gap: 3rem;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   width: calc(100% - 2.5rem);
   max-width: $site-width;

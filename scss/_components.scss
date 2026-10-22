@@ -1,0 +1,64 @@
+// Home hero: current position, focus areas and primary links.
+
+.home-hero__focus,
+.home-hero__links {
+  text-align: left;
+  hyphens: manual;
+}
+
+.home-hero__focus dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: $space-6;
+  margin: 0 0 $space-8;
+  border-top: 1px solid $color-border;
+}
+
+.home-hero__focus dt,
+.home-hero__focus dd {
+  margin: 0;
+  padding-block: 0.7rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.home-hero__focus dt {
+  color: $primary;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: $font-size-base * $line-height-base;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.home-hero__focus dd {
+  color: $color-muted;
+}
+
+.home-hero__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+}
+
+.home-hero__links p {
+  margin: 0;
+}
+
+.home-hero__links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 1.1rem;
+  border: 1px solid $primary;
+  border-radius: $border-radius;
+  color: $primary;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.home-hero__links a:hover,
+.home-hero__links a:focus-visible {
+  background: $primary;
+  color: $color-navbar-text;
+}
