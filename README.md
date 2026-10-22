@@ -1,4 +1,4 @@
-# naolipth.github.io
+# Personal site
 
 Source of my personal website, **[naolipth.github.io](https://naolipth.github.io)**. It's built with [Quarto](https://quarto.org) and published to GitHub Pages.
 
@@ -83,8 +83,3 @@ Every push to `main` triggers `.github/workflows/publish.yml`, which checks out
 the repo with its submodules, renders the site and publishes it to the
 `gh-pages` branch. GitHub Pages serves that branch. The workflow can also be run
 manually from the Actions tab.
-
-## License
-
-© Olivér Nagy. All rights reserved. The content of this site is not licensed for reuse.
-See the [disclaimer](https://naolipth.github.io/disclaimer.html).
