@@ -1,0 +1,138 @@
+.page-research {
+  #title-block-header {
+    display: none;
+  }
+
+  main.content {
+    grid-column: page-start / page-end;
+    max-width: 52rem;
+    margin-inline: auto;
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .publication-list > ol {
+    padding-left: 1rem;
+    margin-bottom: 0;
+  }
+  .publication-list > ol > li {
+    padding-block: 0.65rem;
+  }
+  .publication p {
+    margin-bottom: 0.35rem;
+  }
+
+  // Publication titles: no underline (the citation paragraph's only link is the title).
+  .publication > p a {
+    text-decoration: none;
+  }
+
+  .publication > p a:hover {
+    text-decoration: underline;
+  }
+
+  // Row of buttons under each citation.
+  .publication__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $space-3;
+  }
+
+  .publication__button {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 0.85rem;
+    border: 1px solid $primary;
+    border-radius: $border-radius;
+    background: transparent;
+    color: $primary;
+    font: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+
+  .publication__button:hover,
+  .publication__button:focus-visible,
+  .publication__toggle[aria-expanded="true"] {
+    background: $primary;
+    color: $color-navbar-text;
+  }
+
+  // Chevron on the panel buttons; points up while the panel is open.
+  .publication__toggle::after {
+    content: "";
+    width: 0.4em;
+    height: 0.4em;
+    margin-left: 0.6em;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-0.15em) rotate(45deg);
+    transition: transform 0.15s ease;
+  }
+
+  .publication__toggle[aria-expanded="true"]::after {
+    transform: translateY(0.1em) rotate(-135deg);
+  }
+
+  // Roll-down panel under the button row.
+  .publication__panel {
+    margin-top: $space-3;
+    padding: $space-6;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    background: $body-bg;
+    animation: publication-panel-open 0.15s ease-out;
+  }
+  .publication__panel > :last-child {
+    margin-bottom: 0;
+  }
+
+  // BibTeX panel: plain monospace text with a Copy button at the top right.
+  .publication__copy {
+    float: right;
+    margin: 0 0 $space-3 $space-3;
+    padding: 0.2rem 0.65rem;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    background: $body-bg;
+    color: $primary;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .publication__copy:hover,
+  .publication__copy:focus-visible {
+    border-color: $primary;
+  }
+
+  .publication__bibtex {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 0.8125rem;
+    line-height: 1.55;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    text-align: left;
+    hyphens: manual;
+  }
+
+  .publication__bibtex code {
+    padding: 0;
+    background: none;
+    color: inherit;
+    font-size: inherit;
+  }
+}
+
+@keyframes publication-panel-open {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+}

@@ -1,6 +1,15 @@
 ---
-title: "Research"
-nocite: '@*'
+title: Research
+body-classes: page-research
+citeproc: false
+publication-owner:
+  family: Nagy
+  given: Olivér
+metadata-files:
+  - research-links.yml
+filters:
+  - filters/publications.lua
 ---
 
-## Publications
+::: {#publications}
+:::
