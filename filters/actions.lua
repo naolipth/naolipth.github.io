@@ -1,5 +1,5 @@
 -- Button row under each citation and the roll-down panels it controls.
--- Order: Abstract, Summary, Deep dive, Paper, Code, BibTeX. Each appears only
+-- Order: Abstract, Non-technical, Deep dive, Paper, Code, BibTeX. Each appears only
 -- when its content exists. publications.js opens and closes the panels.
 local utils = dofile('filters/utils.lua')
 local text, escape = utils.text, utils.escape
@@ -25,7 +25,7 @@ function M.build(id, ref, extra, source)
     panels:insert(pandoc.Div(content, pandoc.Attr(panel_id, {'publication__panel'}, {hidden = ''})))
   end
 
-  -- Optional research folder: _abstract.md and _summary.md become panels,
+  -- Optional research folder: _abstract.md and _non-technical.md become panels,
   -- article-page.qmd a deep-dive page. The underscores stop Quarto from
   -- rendering the two snippets as pages of their own.
   local folder = text(extra.folder)

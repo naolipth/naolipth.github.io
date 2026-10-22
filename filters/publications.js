@@ -1,6 +1,6 @@
 // Research page: opens one panel per publication at a time and copies BibTeX.
 document.addEventListener('click', (event) => {
-  // Summary / Abstract / BibTeX buttons: open the clicked panel, close its siblings.
+  // Abstract / Non-technical / BibTeX buttons: open the clicked panel, close its siblings.
   const toggle = event.target.closest('.publication__toggle');
   if (toggle) {
     const open = toggle.getAttribute('aria-expanded') !== 'true';
