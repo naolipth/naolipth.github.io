@@ -4,6 +4,7 @@ project:
 website: 
   title: "Olivér Nagy | Quantitative Developer & Economist"
   site-url: 'https://naolipth.github.io'
+  favicon: images/favicon.png
 
   search: false
 
@@ -56,5 +57,9 @@ format:
           document.getElementById("copyright-year").textContent =
             new Date().getFullYear();
         </script>
+    
+    include-in-header:
+      text: |
+        <link rel="apple-touch-icon" href="/images/favicon.png">
 
   
