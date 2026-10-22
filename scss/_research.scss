@@ -7,8 +7,17 @@
     grid-column: page-start / page-end;
     max-width: 52rem;
     margin-inline: auto;
+    margin-top: 0;
     text-align: justify;
     hyphens: auto;
+  }
+
+  #quarto-document-content {
+    padding-top: 3rem;
+  }
+
+  #publications > section:first-child > h2 {
+    margin-top: 0;
   }
 
   .publication-list > ol {
