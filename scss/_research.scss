@@ -6,6 +6,7 @@
   main.content {
     grid-column: page-start / page-end;
     max-width: 52rem;
+    min-width: 0;
     margin-inline: auto;
     margin-top: 0;
     text-align: justify;
@@ -136,6 +137,8 @@
     background: none;
     color: inherit;
     font-size: inherit;
+    white-space: inherit;
+    overflow-wrap: inherit;
   }
 }
 
