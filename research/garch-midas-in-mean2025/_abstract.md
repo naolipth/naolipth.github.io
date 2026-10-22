@@ -1,0 +1,5 @@
+We revisit the relationship between inflation and inflation uncertainty using a novel **GARCH-MIDAS-in-Mean approach**, which allows for the **decomposition of inflation uncertainty into short-term and time-varying long-term components**.
+
+We test our model on UK data. Our findings indicate that macroeconomic and financial variables significantly influence the long-term component of inflation uncertainty. By enabling long-term uncertainty to vary over time through MIDAS filtering, **we show that the evidence for past inflation raising short-run uncertainty weakens** compared to results that assume a constant long-term inflation uncertainty component. However, our results support the Cukierman–Meltzer hypothesis, indicating that the impact of inflation uncertainty on inflation becomes more robust and pronounced when longer samples are used, although this effect is sensitive to structural breaks, such as the VAT cut and the Covid-19 pandemic. 
+
+Additionally, we find no evidence that changes in inflation feed back into short-run uncertainty.
