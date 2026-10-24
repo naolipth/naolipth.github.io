@@ -43,7 +43,6 @@ function Pandoc(doc)
 
   -- Read every bibliography file; sources gets the raw entry and eid per BibTeX ID.
   local refs, sources = bib_source.read_all(doc.meta.bibliography)
-  for _, path in ipairs(paths) do refs:extend(bib_source.read(text(path), sources)) end
   assert(#refs > 0, 'No publications found')
   table.sort(refs, newest_first)
 
