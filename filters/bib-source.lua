@@ -19,4 +19,13 @@ function M.read(path, sources)
   return pandoc.read(input, 'biblatex').meta.references or {}
 end
 
+-- Reads every bibliography file in the front matter (one path or a list).
+-- Returns all references and the {raw, eid} sources per BibTeX ID.
+function M.read_all(paths)
+  if pandoc.utils.type(paths) ~= 'List' then paths = {paths} end
+  local refs, sources = pandoc.List({}), {}
+  for _, path in ipairs(paths) do refs:extend(M.read(utils.text(path), sources)) end
+  return refs, sources
+end
+
 return M
