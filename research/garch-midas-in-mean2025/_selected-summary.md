@@ -1,0 +1,1 @@
+Does higher inflation make it harder to predict what will happen next? In the UK, long-term uncertainty is more important than short-term ups and downs. Sudden jumps in inflation have little effect on short-term uncertainty.

@@ -20,3 +20,12 @@ document.addEventListener('click', (event) => {
     });
   }
 });
+
+// Links like research.html?open=abstract#pub-<id> (Selected papers on the home
+// page) open that panel; the browser scrolls to the publication itself.
+const linkedPanel = new URLSearchParams(location.search).get('open');
+if (linkedPanel && location.hash) {
+  const panelId = CSS.escape(`${location.hash.slice(1)}-${linkedPanel}`);
+  document.querySelector(`.publication__toggle[aria-controls="${panelId}"]`)?.click();
+}
+

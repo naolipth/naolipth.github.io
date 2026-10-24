@@ -8,6 +8,11 @@
     display: none;
   }
 
+  .selected-research {
+    max-width: $hero-text-width;
+    margin-bottom: $space-8;
+  }
+
 }
 
 @media (max-width: 767.98px) {
@@ -34,6 +39,19 @@
 
   .home-hero__focus dd {
     padding-top: 0.15rem;
+  }
+
+  .selected-paper {
+    padding: $space-6 $space-4;
+  }
+
+  .selected-paper__title {
+    font-size: 1.2rem;
+  }
+
+  .selected-research__step {
+    width: 44px;
+    height: 44px;
   }
 
 }

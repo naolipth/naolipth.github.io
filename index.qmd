@@ -1,6 +1,16 @@
 ---
 page-layout: custom
+citeproc: false
+metadata-files:
+  - research-links.yml
+selected-publications:
+  - nagy2025geopolitical
+  - chen2025inflation
+  - granat2023expect
+filters:
+  - filters/selected-publications.lua
 ---
+
 
 ::: {.home-hero}
 
@@ -47,4 +57,7 @@ Research
 ![](images/picture_1.jpg){fig-alt="Portrait of Olivér Nagy"}
 :::
 
+:::
+
+::: {#selected-publications}
 :::

@@ -1,0 +1,1 @@
+Sovereign CDS spreads in 47 countries had already risen at least two weeks before Russia invaded Ukraine. Before the war, countries with weaker finances were seen as riskier. After the invasion, NATO membership and distance from Moscow became more important.

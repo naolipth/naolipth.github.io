@@ -1,0 +1,1 @@
+Equity markets exhibited reactions to the Russian invasion of Ukraine at least 50 days prior to the event. Among the 62 observed markets, only approximately one-third of the available information was built into the stock prices on the day of the invasion.

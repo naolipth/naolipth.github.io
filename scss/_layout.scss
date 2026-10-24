@@ -34,3 +34,12 @@
   hyphens: auto;
   padding: 3rem 0;
 }
+
+// Home Selected papers: as wide as the hero's two columns, centred below it.
+.selected-research {
+  width: calc(100% - 2.5rem);
+  max-width: calc(#{$hero-text-width} + #{$hero-gap} + #{$hero-portrait-width});
+  margin: 0 auto $space-12;
+  padding-top: $space-6;
+  border-top: 1px solid $color-border;
+}
