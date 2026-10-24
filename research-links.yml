@@ -6,5 +6,6 @@ publication-links:
   chen2025covid: {}
   granat2023expect:
     folder: research/expect2023
-  lehmann2020coordination: {}
+  lehmann2020coordination:
+    folder: research/euro-area2020
   mero2019factors: {}
