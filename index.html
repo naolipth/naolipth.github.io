@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-036281043e48302f8f66bfde0e14c426.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a3af5bc14f0a8c6f9fb8773f0bb42221.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-16c7cebd8f041293cda33dd1f3eb3cd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -151,6 +151,85 @@ Volatility forecasting, asset pricing, event studies
 <div class="home-hero__portrait">
 <p><img src="images/picture_1.jpg" class="img-fluid" alt="Portrait of Olivér Nagy"></p>
 </div>
+</div>
+<div id="selected-publications">
+<section class="selected-research" aria-roledescription="carousel" aria-labelledby="selected-research-title">
+<div class="selected-research__header">
+<h2 id="selected-research-title" class="selected-research__title">Selected papers</h2>
+<div class="selected-research__controls" hidden="">
+<button type="button" class="selected-research__step" aria-label="Previous paper" disabled="">‹</button>
+<span class="selected-research__count" aria-live="polite">1 / 3</span>
+<button type="button" class="selected-research__step" aria-label="Next paper">›</button>
+</div>
+</div>
+<div class="selected-research__track" tabindex="0" aria-label="Papers">
+<div class="selected-paper" role="group" aria-roledescription="slide" aria-label="1 of 3">
+<p class="selected-paper__meta">2025 · Economic Analysis and Policy</p>
+<h3 class="selected-paper__title"><a href="https://doi.org/10.1016/j.eap.2025.02.027">Assessing
+geopolitical risk: Sovereign <span>CDS</span> insights from the
+<span>Russo-Ukrainian War</span></a></h3>
+<p class="selected-paper__authors">Nagy, O., &amp; Neszveda, G.</p>
+<div class="selected-paper__summary"><p>Sovereign CDS spreads in 47 countries had already risen at least two
+weeks before Russia invaded Ukraine. Before the war, countries with
+weaker finances were seen as riskier. After the invasion, NATO
+membership and distance from Moscow became more important.</p></div>
+<p class="selected-paper__links"><a href="https://doi.org/10.1016/j.eap.2025.02.027">Paper</a><span aria-hidden="true"> · </span><a href="research.html?open=abstract#pub-nagy2025geopolitical">Abstract →</a></p>
+</div>
+<div class="selected-paper" role="group" aria-roledescription="slide" aria-label="2 of 3">
+<p class="selected-paper__meta">2025 · Financial and Economic Review</p>
+<h3 class="selected-paper__title"><a href="https://doi.org/10.33893/FER.24.3.52">Inflation and
+uncertainty: Evidence from <span class="nocase">GARCH-MIDAS-in-Mean</span> modelling</a></h3>
+<p class="selected-paper__authors">Chen, C., Barkó, T., &amp; Nagy, O.</p>
+<div class="selected-paper__summary"><p>Does higher inflation make it harder to predict what will happen
+next? In the UK, long-term uncertainty is more important than short-term
+ups and downs. Sudden jumps in inflation have little effect on
+short-term uncertainty.</p></div>
+<p class="selected-paper__links"><a href="https://doi.org/10.33893/FER.24.3.52">Paper</a><span aria-hidden="true"> · </span><a href="research.html?open=abstract#pub-chen2025inflation">Abstract →</a></p>
+</div>
+<div class="selected-paper" role="group" aria-roledescription="slide" aria-label="3 of 3">
+<p class="selected-paper__meta">2023 · Finance Research Letters</p>
+<h3 class="selected-paper__title"><a href="https://doi.org/10.1016/j.frl.2023.104301">Expect the
+unexpected: Did the equity markets anticipate the <span>Russo-Ukrainian
+War</span>?</a></h3>
+<p class="selected-paper__authors">Granát, M. P., Lehmann, K., Nagy, O., &amp; Neszveda, G.</p>
+<div class="selected-paper__summary"><p>Equity markets exhibited reactions to the Russian invasion of Ukraine
+at least 50 days prior to the event. Among the 62 observed markets, only
+approximately one-third of the available information was built into the
+stock prices on the day of the invasion.</p></div>
+<p class="selected-paper__links"><a href="https://doi.org/10.1016/j.frl.2023.104301">Paper</a><span aria-hidden="true"> · </span><a href="research.html?open=abstract#pub-granat2023expect">Abstract →</a></p>
+</div>
+</div>
+</section>
+<script>
+// Home page: steps the Selected papers row one card at a time.
+document.querySelectorAll('.selected-research').forEach((section) => {
+  const track = section.querySelector('.selected-research__track');
+  const cards = track.children;
+  if (cards.length < 2) return;
+  const [prev, next] = section.querySelectorAll('.selected-research__step');
+  const count = section.querySelector('.selected-research__count');
+  const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+  // One step is a card's width plus the gap.
+  const step = () => cards[1].offsetLeft - cards[0].offsetLeft;
+
+  // Counter and buttons follow the scroll position, whether stepped, swiped or tabbed.
+  const update = () => {
+    const i = Math.round(track.scrollLeft / step());
+    count.textContent = `${i + 1} / ${cards.length}`;
+    prev.disabled = i === 0;
+    next.disabled = i === cards.length - 1;
+  };
+
+  prev.addEventListener('click', () => track.scrollBy({left: -step(), behavior}));
+  next.addEventListener('click', () => track.scrollBy({left: step(), behavior}));
+  track.addEventListener('scroll', update, {passive: true});
+
+  // Controls appear, and the scrollbar hides, only once this has run.
+  section.classList.add('is-enhanced');
+  section.querySelector('.selected-research__controls').hidden = false;
+  update();
+});
+</script>
 </div>
 
 

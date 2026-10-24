@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-036281043e48302f8f66bfde0e14c426.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a3af5bc14f0a8c6f9fb8773f0bb42221.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-16c7cebd8f041293cda33dd1f3eb3cd8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -293,6 +293,15 @@ document.addEventListener('click', (event) => {
     });
   }
 });
+
+// Links like research.html?open=abstract#pub-<id> (Selected papers on the home
+// page) open that panel; the browser scrolls to the publication itself.
+const linkedPanel = new URLSearchParams(location.search).get('open');
+if (linkedPanel && location.hash) {
+  const panelId = CSS.escape(`${location.hash.slice(1)}-${linkedPanel}`);
+  document.querySelector(`.publication__toggle[aria-controls="${panelId}"]`)?.click();
+}
+
 </script>
 </section>
 </div>
