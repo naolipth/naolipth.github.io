@@ -4,6 +4,7 @@ publication-links:
   nagy2025geopolitical:
     folder: research/geopolitical-risk-cds2025
   chen2025covid: {}
-  granat2023expect: {}
+  granat2023expect:
+    folder: research/expect2023
   lehmann2020coordination: {}
   mero2019factors: {}
