@@ -45,6 +45,10 @@ website:
 
 bibliography: bibliography/publications.bib
 
+publication-owner:
+  family: Nagy
+  given: Olivér
+
 format:
   html:
     theme: 

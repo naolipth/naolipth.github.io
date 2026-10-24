@@ -2,9 +2,6 @@
 title: Research
 body-classes: page-research
 citeproc: false
-publication-owner:
-  family: Nagy
-  given: Olivér
 metadata-files:
   - research-links.yml
 filters:
