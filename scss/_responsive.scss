@@ -1,6 +1,6 @@
 @media (max-width: 1055px) {
   .home-hero {
-    grid-template-columns: min(550px, 100%);
+    grid-template-columns: min($hero-text-width, 100%);
     padding-block: $space-8;
   }
 

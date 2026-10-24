@@ -1,7 +1,7 @@
 .home-hero {
   display: grid;
-  grid-template-columns: 550px 300px;
-  gap: 3rem;
+  grid-template-columns: $hero-text-width $hero-portrait-width;
+  gap: $hero-gap;
   align-items: start;
   justify-content: center;
   width: calc(100% - 2.5rem);
