@@ -1,0 +1,38 @@
+// Mixins shared by the rule partials.
+
+// Desktop-first breakpoint: the rules inside apply up to $width.
+@mixin below($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+// Centred block up to $max wide, keeping the page gutter on small screens.
+@mixin page-width($max) {
+  width: calc(100% - #{2 * $page-gutter});
+  max-width: $max;
+  margin-inline: auto;
+}
+
+// Justified prose with hyphenation.
+@mixin justified {
+  text-align: justify;
+  hyphens: auto;
+}
+
+// Outlined navy button: hero links, publication buttons, Selected papers steps.
+@mixin outline-button {
+  border: 1px solid $primary;
+  border-radius: $border-radius;
+  background: transparent;
+  color: $primary;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color $motion-fast, color $motion-fast;
+}
+
+// The same button filled: hover, keyboard focus and open states.
+@mixin outline-button-filled {
+  background: $primary;
+  color: $color-navbar-text;
+}

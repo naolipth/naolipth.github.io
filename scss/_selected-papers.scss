@@ -1,0 +1,167 @@
+// Home page Selected papers: one card at a time, stepped with the buttons
+// (filters/selected-research.js) or by swiping. As wide as the hero's columns.
+
+.selected-research {
+  @include page-width($home-width);
+  margin-block: 0 $space-12;
+  padding-top: $space-6;
+  border-top: 1px solid $color-border;
+}
+
+.selected-research__header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-3;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: $space-4;
+}
+
+.selected-research__title {
+  margin: 0;
+}
+
+// Bootstrap's [hidden] rule keeps the controls hidden until the script shows them.
+.selected-research__controls {
+  display: flex;
+  gap: $space-3;
+  align-items: center;
+}
+
+.selected-research__step {
+  @include outline-button;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $control-size;
+  height: $control-size;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.selected-research__step:hover:not(:disabled),
+.selected-research__step:focus-visible {
+  @include outline-button-filled;
+}
+
+.selected-research__step:disabled {
+  border-color: $color-border;
+  color: $color-border;
+  cursor: default;
+}
+
+.selected-research__count {
+  min-width: 3.5em;
+  color: $color-muted;
+  font-size: $text-sm;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+// One full-width card per stop; the gap keeps the next card's edge out of view.
+.selected-research__track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  gap: $space-4;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+}
+
+.selected-research__track:focus-visible {
+  outline: 2px solid $primary;
+  outline-offset: 2px;
+}
+
+// The scrollbar is the fallback control, so it hides only once the script has run.
+.selected-research.is-enhanced .selected-research__track {
+  scrollbar-width: none;
+}
+
+.selected-research.is-enhanced .selected-research__track::-webkit-scrollbar {
+  display: none;
+}
+
+.selected-paper {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: $space-4 $space-12;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  background: $color-surface;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+.selected-paper__meta {
+  margin-bottom: $space-3;
+  color: $color-muted;
+  font-size: $text-meta;
+}
+
+.selected-paper__title {
+  margin: 0 0 $space-3;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+// Title and links: deep blue, underlined only on hover or keyboard focus.
+.selected-paper__title a,
+.selected-paper__links a {
+  color: $primary;
+  text-decoration-line: none;
+}
+
+.selected-paper__title a:hover,
+.selected-paper__title a:focus-visible,
+.selected-paper__links a:hover,
+.selected-paper__links a:focus-visible {
+  text-decoration-line: underline;
+}
+
+.selected-paper__authors {
+  margin-bottom: $space-4;
+  color: $color-muted;
+  font-size: $text-meta;
+}
+
+.selected-paper__summary p {
+  @include justified;
+  max-width: $prose-width;
+  margin-bottom: $space-4;
+}
+
+// Pinned to the bottom, so the links line up across cards of different length.
+.selected-paper__links {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: $color-muted;
+  font-size: $text-meta;
+}
+
+.selected-paper__links a {
+  font-weight: 700;
+}
+
+@include below($bp-hero-stack) {
+  .selected-research {
+    max-width: $hero-text-width;
+    margin-bottom: $space-8;
+  }
+}
+
+@include below($bp-phone) {
+  .selected-paper {
+    padding: $space-6 $space-4;
+  }
+
+  .selected-research__step {
+    width: $touch-target;
+    height: $touch-target;
+  }
+}

@@ -42,3 +42,23 @@ $space-4: 1rem;
 $space-6: 1.5rem;
 $space-8: 2rem;
 $space-12: 3rem;
+
+// Layout.
+$page-gutter: 1.25rem; // each side, on small screens
+$research-width: 52rem;
+$home-width: calc(#{$hero-text-width} + #{$hero-gap} + #{$hero-portrait-width});
+$anchor-offset: 5rem; // anchor jumps stop below the fixed navbar
+
+// Breakpoints (desktop-first: rules apply up to these widths).
+$bp-hero-stack: 1055px;
+$bp-phone: 767.98px; // Bootstrap's md - 0.02px
+
+// Small text sizes. The text- prefix avoids overriding Bootstrap's $font-size-sm.
+$text-xs: 0.8125rem; // labels, BibTeX
+$text-sm: 0.875rem; // footer, buttons, counter
+$text-meta: 0.9375rem; // metadata, authors, card links
+
+// Controls.
+$control-size: 36px;
+$touch-target: 44px;
+$motion-fast: 0.15s ease;

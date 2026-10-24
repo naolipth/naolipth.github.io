@@ -4,10 +4,11 @@
 
 /*-- scss:rules --*/
 
+@import "scss/mixins";
 @import "scss/base";
 @import "scss/typography";
 @import "scss/navigation";
 @import "scss/layout";
-@import "scss/components";
+@import "scss/home";
+@import "scss/selected-papers";
 @import "scss/research";
-@import "scss/responsive";

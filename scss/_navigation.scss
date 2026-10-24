@@ -1,5 +1,5 @@
 .navbar {
-  padding: $space-3 1.25rem;
+  padding: $space-3 $page-gutter;
   border-bottom: 1px solid $color-border;
   box-shadow: none;
 }
@@ -14,8 +14,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 44px;
-  min-height: 44px;
+  min-width: $touch-target;
+  min-height: $touch-target;
   color: $color-navbar-text;
   font-size: 1rem;
   font-weight: 700;
@@ -35,16 +35,20 @@
 }
 
 .nav-footer {
-  width: calc(100% - 2.5rem);
-  max-width: $site-width;
-  margin-inline: auto;
+  @include page-width($site-width);
   padding: $space-8 0;
   border-top: 1px solid $color-border;
   color: $color-muted;
-  font-size: 0.875rem;
+  font-size: $text-sm;
 }
 
 .nav-footer a {
   color: $color-muted;
   text-underline-offset: 0.2em;
+}
+
+@include below($bp-phone) {
+  .nav-footer {
+    padding-block: $space-6;
+  }
 }
