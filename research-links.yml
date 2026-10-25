@@ -3,7 +3,8 @@ publication-links:
     folder: research/garch-midas-in-mean2025
   nagy2025geopolitical:
     folder: research/geopolitical-risk-cds2025
-  chen2025covid: {}
+  chen2025covid: 
+    folder: research/covid19-stock-volatility2025
   granat2023expect:
     folder: research/expect2023
   lehmann2020coordination:
