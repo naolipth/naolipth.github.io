@@ -31,6 +31,10 @@ website:
         href: https://www.linkedin.com/in/olivernagy1/
         aria-label: LinkedIn
 
+      - icon: orcid
+        href: https://orcid.org/0009-0003-7404-8568
+        aria-label: ORCID  
+
       - icon: mortarboard-fill
         href: https://scholar.google.com/citations?user=aCQ6wv0AAAAJ
         aria-label: Google Scholar

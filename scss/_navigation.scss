@@ -52,3 +52,13 @@
     padding-block: $space-6;
   }
 }
+
+// ORCID has no Bootstrap icon: draw images/orcid.png as a mask in the text colour.
+.bi-orcid::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask: url("images/orcid.png") center / contain no-repeat;
+}
