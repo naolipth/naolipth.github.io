@@ -1,6 +1,6 @@
 # Personal site
 
-Source of my personal website, **[naolipth.github.io](https://naolipth.github.io)**. It's built with [Quarto](https://quarto.org) and published to GitHub Pages.
+Source of my personal website. It's built with [Quarto](https://quarto.org) and published to GitHub Pages.
 
 ## Structure
 
@@ -13,7 +13,7 @@ Source of my personal website, **[naolipth.github.io](https://naolipth.github.io
 | `research/<name>/` | Optional per-publication content (abstract, non-technical summary, deep dive) |
 | `disclaimer.qmd` | Disclaimer page linked from the footer |
 | `bibliography/` | Git submodule ([naolipth/publications](https://github.com/naolipth/publications)) containing `publications.bib` |
-| `filters/` | Lua filters (and one JS file) that build the Research page |
+| `filters/` | Lua filters and two JS files for the Research page and home-page selected papers |
 | `styles.scss`, `scss/` | Custom styles layered on the Bootswatch `cosmo` theme |
 | `files/` | Downloadable files (CV) |
 | `images/` | Portrait, favicon and icons |
@@ -23,8 +23,8 @@ Source of my personal website, **[naolipth.github.io](https://naolipth.github.io
 Requirements: [Quarto](https://quarto.org/docs/get-started/) (developed with 1.10).
 
 ```bash
-git clone --recurse-submodules https://github.com/naolipth/naolipth.github.io.git
-cd naolipth.github.io
+git clone --recurse-submodules https://github.com/naolipth/personal_site.git
+cd personal_site
 quarto preview        # live-reloading dev server
 quarto render         # full build into _site/
 ```
@@ -42,7 +42,7 @@ git submodule update --init
 
 - Publications are grouped by type (articles, book chapters) and sorted newest first.
 - Each one gets an APA-style citation (`filters/citation.lua`). The site owner's name
-  (`publication-owner` in `research.qmd`) is shown in bold.
+    (`publication-owner` in `_quarto.yml`) is shown in bold.
 - Under the citation is a row of buttons (`filters/actions.lua`): **Abstract**,
   **Non-technical**, **Deep dive →**, **Paper**, **Code** and **BibTeX**. A button only
   appears when its content exists. `filters/publications.js` opens and closes the
@@ -73,9 +73,9 @@ git submodule update --init
 
    The leading underscore stops Quarto from rendering the snippets as standalone pages.
 
-A typo in the setup fails the build with a clear message rather than producing
-a broken page. This covers an unknown key in `research-links.yml`, a duplicate
-BibTeX ID, and a folder with no research files.
+The build fails with a clear message for an unknown publication key in
+`research-links.yml`, a duplicate BibTeX ID, or a mapped folder containing none
+of `_abstract.md`, `_non-technical.md`, or `article-page.qmd`.
 
 ## Deployment
 
