@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "disclaimer.html",
+    "href": "disclaimer.html",
+    "title": "Disclaimer",
+    "section": "",
+    "text": "The views and opinions expressed on this website are my own and do not necessarily reflect the views or positions of my current or past employers or any other organization or institution with which I am affiliated.\nThe material published on this website is provided for informational, educational, and research purposes only. Nothing on this website constitutes, or should be construed as, investment, financial, legal, tax, or other professional advice.\nAny models, code, analyses, examples, or data presented on this website are provided without warranty and should not be relied upon for investment or other financial decisions."
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
@@ -19,12 +26,5 @@
     "title": "Research",
     "section": "",
     "text": "Chen, Chaoyi, Nagy, Olivér, & Neszveda, Gábor (2025). COVID-19 pandemic and stock volatility forecasts: A comprehensive evaluation and comparisons. In: Encyclopedia of monetary policy, financial markets and banking.\nAbstractBibTeX\n\nThis study provides a comprehensive evaluation of stock return volatility forecasting using various GARCH-type models, analyzing their performance across the entire, pre-, during, and post-pandemic periods. We assess model performance using both the outperformance testing based on average results and winning ratios based on the best-performed frequency. Our overall findings reveal that no single model consistently outperforms others across all periods and forecasting horizons. Furthermore, we find that using winning frequency versus significance of outperformance leads to different conclusions. In terms of winning frequency, GARCH(1,1) consistently performs better than asymmetric GARCH models across both short-run and long-run horizons, particularly in the pre- and post-pandemic periods. However, based on the testing results, asymmetric GARCH models exhibit significant outperformance in pre- and post-pandemic periods.\n\n\nCopy@incollection{chen2025covid,\n  author    = {Chen, Chaoyi and Nagy, Olivér and Neszveda, Gábor},\n  title     = {{COVID-19} Pandemic and Stock Volatility Forecasts: A Comprehensive Evaluation and Comparisons},\n  booktitle = {Encyclopedia of Monetary Policy, Financial Markets and Banking},\n  editor    = {Apergis, Nicholas},\n  publisher = {Elsevier},\n  location  = {Amsterdam},\n  year      = {2025},\n  volume    = {4},\n  pages     = {62--78},\n  doi       = {10.1016/B978-0-44-313776-1.00290-7}\n}"
-  },
-  {
-    "objectID": "disclaimer.html",
-    "href": "disclaimer.html",
-    "title": "Disclaimer",
-    "section": "",
-    "text": "The views and opinions expressed on this website are my own and do not necessarily reflect the views or positions of my current or past employers or any other organization or institution with which I am affiliated.\nThe material published on this website is provided for informational, educational, and research purposes only. Nothing on this website constitutes, or should be construed as, investment, financial, legal, tax, or other professional advice.\nAny models, code, analyses, examples, or data presented on this website are provided without warranty and should not be relied upon for investment or other financial decisions."
   }
 ]

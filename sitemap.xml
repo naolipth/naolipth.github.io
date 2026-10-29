@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://olivernagy.eu/research.html</loc>
-    <lastmod>2026-10-27T10:56:38.473Z</lastmod>
-  </url>
-  <url>
     <loc>https://olivernagy.eu/index.html</loc>
-    <lastmod>2026-10-27T10:56:38.473Z</lastmod>
+    <lastmod>2026-10-29T16:15:23.304Z</lastmod>
   </url>
   <url>
     <loc>https://olivernagy.eu/disclaimer.html</loc>
-    <lastmod>2026-10-27T10:56:38.469Z</lastmod>
+    <lastmod>2026-10-29T16:15:23.300Z</lastmod>
+  </url>
+  <url>
+    <loc>https://olivernagy.eu/research.html</loc>
+    <lastmod>2026-10-29T16:15:23.304Z</lastmod>
   </url>
 </urlset>
