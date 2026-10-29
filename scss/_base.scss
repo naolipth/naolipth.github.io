@@ -9,8 +9,7 @@ svg {
 }
 
 ::selection {
-  background: $body-bg;
-  color: $body-color;
+  background: $selection-blue;
 }
 
 @media (prefers-reduced-motion: reduce) {
