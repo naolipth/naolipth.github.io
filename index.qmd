@@ -32,7 +32,7 @@ Quantitative development
 : Numerical methods, model implementation, financial modelling
 
 Economics
-: Monetary policy, forecasting, policy evaluation
+: Monetary policy, inflation forecasting, policy evaluation
 
 Research
 : Volatility forecasting, asset pricing, event studies
